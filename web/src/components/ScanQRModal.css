@@ -1,0 +1,185 @@
+.scan-modal {
+  max-width: 350px;
+}
+
+.scan-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.scan-instructions p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.qr-frame {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 20px;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.qr-corners {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.corner {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #1B5E5E;
+}
+
+.corner.top-left {
+  top: 10px;
+  left: 10px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.corner.top-right {
+  top: 10px;
+  right: 10px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.corner.bottom-left {
+  bottom: 10px;
+  left: 10px;
+  border-right: none;
+  border-top: none;
+}
+
+.corner.bottom-right {
+  bottom: 10px;
+  right: 10px;
+  border-left: none;
+  border-top: none;
+}
+
+.scan-line {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #1B5E5E, transparent);
+  transform: translateY(-50%);
+}
+
+.scan-line.active {
+  animation: scanAnimation 2s ease-in-out infinite;
+}
+
+@keyframes scanAnimation {
+  0% { top: 10px; }
+  50% { top: 50%; }
+  100% { top: 190px; }
+}
+
+.qr-frame.scanning {
+  background-color: #e8f5e8;
+}
+
+.scan-btn {
+  background-color: #1B5E5E;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.scanning-state p {
+  margin-bottom: 16px;
+  color: #1B5E5E;
+  font-weight: 600;
+}
+
+.loading-dots {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.loading-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #1B5E5E;
+  animation: loadingDots 1.4s ease-in-out infinite both;
+}
+
+.loading-dots span:nth-child(1) { animation-delay: -0.32s; }
+.loading-dots span:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes loadingDots {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1); }
+}
+
+.scan-result {
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.scan-result h3 {
+  color: #1B5E5E;
+  margin-bottom: 20px;
+}
+
+.appliance-preview {
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+}
+
+.preview-icon {
+  font-size: 32px;
+}
+
+.preview-details h4 {
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.preview-details p {
+  margin: 2px 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.scan-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.confirm-btn {
+  flex: 1;
+  background-color: #1B5E5E;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}

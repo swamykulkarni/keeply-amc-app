@@ -1,0 +1,27 @@
+{
+  "name": "Keeply AMC Tracker",
+  "description": "Annual Maintenance Contract tracking app for home appliances - Built in India 🇮🇳",
+  "repository": "https://github.com/your-username/keeply-amc-app",
+  "keywords": ["amc", "appliances", "maintenance", "tracking", "india", "react", "vite"],
+  "website": "https://keeply-amc.railway.app",
+  "success_url": "/",
+  "env": {
+    "NODE_ENV": {
+      "description": "Node environment",
+      "value": "production"
+    },
+    "PORT": {
+      "description": "Port number",
+      "value": "4000"
+    }
+  },
+  "build": {
+    "commands": [
+      "cd web && npm install",
+      "cd web && npm run build"
+    ]
+  },
+  "start": {
+    "command": "cd web && npm run start"
+  }
+}
