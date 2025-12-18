@@ -63,10 +63,10 @@ function HomeScreen({ appliances, onScanQR, onAddManual, onShowAMCStatus, onBrow
         </button>
         <button className="action-btn" onClick={onAddManual}>
           <span className="action-icon">➕</span>
-          <span>Add Manual</span>
+          <span>Add Manually</span>
         </button>
         <button className="action-btn" onClick={onBrowseAdd}>
-          <span className="action-icon">➕</span>
+          <span className="action-icon">🔍</span>
           <span>Browse & Add</span>
         </button>
       </div>

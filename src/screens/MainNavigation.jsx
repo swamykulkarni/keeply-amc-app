@@ -146,7 +146,7 @@ function MainNavigation() {
   const tabs = [
     { icon: '🏠', label: 'Home' },
     { icon: '📱', label: 'Appliances' },
-    { icon: '➕', label: 'Browse & Add' },
+    { icon: '🔍', label: 'Browse & Add' },
     { icon: '👤', label: 'Profile' }
   ]
 
