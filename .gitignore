@@ -7,6 +7,8 @@ yarn-error.log*
 # Production builds
 web/dist/
 build/
+# Keep root dist folder for deployment
+!dist/
 
 # Environment variables
 .env
