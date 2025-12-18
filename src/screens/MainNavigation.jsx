@@ -87,6 +87,10 @@ function MainNavigation() {
     setActiveTab(1) // Switch to Appliances tab
   }
 
+  const handleBrowseAdd = () => {
+    setActiveTab(2) // Switch to Browse & Add tab
+  }
+
   const handleAddAppliance = (newAppliance) => {
     const appliance = {
       ...newAppliance,
@@ -132,6 +136,7 @@ function MainNavigation() {
       onScanQR={handleScanQR}
       onAddManual={handleAddManual}
       onShowAMCStatus={handleShowAMCStatus}
+      onBrowseAdd={handleBrowseAdd}
     />,
     <DevicesScreen key="devices" appliances={appliances} />,
     <ProductsScreen key="products" onAddFromDatabase={handleAddFromDatabase} />,
@@ -141,7 +146,7 @@ function MainNavigation() {
   const tabs = [
     { icon: '🏠', label: 'Home' },
     { icon: '📱', label: 'Appliances' },
-    { icon: '🗃️', label: 'Database' },
+    { icon: '➕', label: 'Browse & Add' },
     { icon: '👤', label: 'Profile' }
   ]
 

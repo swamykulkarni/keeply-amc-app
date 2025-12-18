@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './HomeScreen.css'
 
-function HomeScreen({ appliances, onScanQR, onAddManual, onShowAMCStatus }) {
+function HomeScreen({ appliances, onScanQR, onAddManual, onShowAMCStatus, onBrowseAdd }) {
   const getStatusColor = (status) => {
     switch(status) {
       case 'active': return '#4CAF50'
@@ -65,9 +65,9 @@ function HomeScreen({ appliances, onScanQR, onAddManual, onShowAMCStatus }) {
           <span className="action-icon">➕</span>
           <span>Add Manual</span>
         </button>
-        <button className="action-btn" onClick={onShowAMCStatus}>
-          <span className="action-icon">📋</span>
-          <span>AMC Status</span>
+        <button className="action-btn" onClick={onBrowseAdd}>
+          <span className="action-icon">➕</span>
+          <span>Browse & Add</span>
         </button>
       </div>
 

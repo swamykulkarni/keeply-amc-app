@@ -53,7 +53,7 @@ function ProductsScreen({ onAddFromDatabase }) {
   return (
     <div className="products-screen">
       <header className="app-header">
-        <h1>Appliance Database</h1>
+        <h1>Browse & Add Appliances</h1>
         <div className="header-actions">
           <span className="results-count">{filteredProducts.length} results</span>
         </div>
