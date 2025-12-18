@@ -1,0 +1,15 @@
+# Ignore Flutter files
+lib/
+pubspec.yaml
+pubspec.lock
+analysis_options.yaml
+
+# Ignore screenshots and docs
+KeeplyScreenshots/
+Keeply.pdf
+README-DEPLOYMENT.md
+DEPLOY.md
+
+# Ignore development files
+.vscode/
+.idea/
