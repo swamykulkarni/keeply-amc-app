@@ -1,11 +1,8 @@
 [build]
 builder = "nixpacks"
-buildCommand = "cd web && npm install && npm run build"
 
 [deploy]
-startCommand = "cd web && npm run start"
-restartPolicyType = "on_failure"
-restartPolicyMaxRetries = 10
+startCommand = "npm run start"
 
 [env]
 NODE_ENV = "production"
