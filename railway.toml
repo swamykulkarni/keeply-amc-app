@@ -3,6 +3,7 @@ builder = "nixpacks"
 
 [deploy]
 startCommand = "npm run start"
+restartPolicyType = "on_failure"
 
 [env]
 NODE_ENV = "production"
